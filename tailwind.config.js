@@ -7,7 +7,12 @@ export default {
   theme: {
     extend: {
       colors:{
-        'gren':'#60B064'
+        'gren':'#60B064',
+        'telegram':'#30B4FF',
+      },
+      backgroundImage: {
+        'hero': "url('/src/imgs/hero.png')",
+
       }
     },
   },
