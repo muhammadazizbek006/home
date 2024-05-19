@@ -4,8 +4,8 @@ import {haqida} from '../../Data'
 const KompaniyaXaqida = () => {
   return (
     <>
-        <section className='py-20'>
-            <div className="containerb w-[1651px] pt-20 pb-16 pl-20   bg-black rounded-2xl text-white">
+        <section className='py-20 bg-black'>
+            <div className="containerb w-[1651px] pt-20 pb-16 pl-20    rounded-2xl text-white">
                   <h2 className='text-6xl mb-14  '>О компании</h2>
                   {/* tepa */}
                   <div className='flex justify-between mb-20'>
