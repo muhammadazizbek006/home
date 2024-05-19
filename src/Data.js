@@ -26,3 +26,44 @@ export const haqida = [
         
     },
 ]
+
+// swiper
+
+
+import s1 from './imgs/swiper/s1.png'
+import s2 from './imgs/swiper/s2.png'
+import s3 from './imgs/swiper/s3.png'
+import s4 from './imgs/swiper/s4.png'
+
+
+export const swipers = [
+    {
+        id:1,
+        img:s1,
+        joylashuv:`Дом в д. Малая Дубна`,
+        maydoni:`193 м2`,
+        etaji:`1 этаж`,
+    },
+    {
+        id:2,
+        img:s2,
+        joylashuv:`Дом в д. Малая Дубна`,
+        joylashuv:`Дом в д. Малая Дубна`,
+        maydoni:`243 м2`,
+        etaji:`3 этаж`,
+    },
+    {
+        id:3,
+        img:s3,
+        joylashuv:` Малая Дубна`,
+        maydoni:`123 м2`,
+        etaji:`1 этаж`,
+    },
+    {
+        id:4,
+        img:s4,
+        joylashuv:`Дом в д. Малая Дубна`,
+        maydoni:`203 м2`,
+        etaji:`2 этаж`,
+    },
+]
