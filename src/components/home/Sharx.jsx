@@ -35,7 +35,7 @@ const Sharx = () => {
 
                     <SwiperSlide className='px-28 py-12' key={e.id}>
                         <div className='flex items-center mb-16'>
-                            <h3 className='text-[40px] '>{e.name}</h3>
+                            <h3 className='text-[40px] mr-4 '>{e.name}</h3>
                             <p>{e.like}</p>
                         </div>
                         <p className='text-2xl font-medium'>{e.sharx}</p>

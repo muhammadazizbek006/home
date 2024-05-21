@@ -12,15 +12,15 @@ const Loyihalar = () => {
                 <h2 className='text-6xl mb-16'>Выбирайте более <br /> чем из 100 проектов</h2>
 
                 {/* loyihalar */}
-                <ul className='grid grid-cols-3 gap-8'>
+                <ul className='grid grid-cols-3 gap-10  i'>
                     {
                         loyihalar.map((e)=>{
                             return(
-                                <li className={` w-[530px] h-[650px] rounded-2xl`}
-                                 style={{ backgroundImage: `url(${e.img})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-                                    <Link className='flex flex-col justify-end h-full p-4  '>
+                                <li className={` w-[530px] h-[650px] rounded-2xl  `}
+                                 style={{ backgroundImage: `url(${e.img})` }}>
+                                    <Link to='/Proects'  className='flex flex-col justify-end h-full p-4  '>
                                         <h3 className='text-5xl text-white mb-9'>{e.title}</h3>
-                                        <Link  className='bg-gren py-3 px-7 rounded w-72 hover:opacity-90 duration-300 flex items-center '>
+                                        <Link  to='/Proects' className='bg-gren py-3 px-7 rounded w-72 hover:opacity-90 duration-300 flex items-center '>
                                             <span className='text-xl text-white mr-3'>Смотреть проекты</span>
                                             <img src={next} alt={e.title} />
                                         </Link>
