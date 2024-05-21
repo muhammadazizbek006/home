@@ -15,7 +15,7 @@ import { sharxlar } from '../../Data';
 const Sharx = () => {
   return (
     <>
-        <section>
+        <section className='pb-20'>
             <div className="containerb">
             <>
       <Swiper
