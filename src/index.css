@@ -13,18 +13,19 @@
 
 
 
-body {
-
-}
-
 .swiper {
+  width: 100%;
+  max-width: 1177px;
+  height: 575px;
+  box-shadow: 0px 0px 10px 3px #00000024;
 
 }
 
-.swiper-slide {
 
+
+
+
+
+.swiper-button-prev{
+  margin-right: 200px;
 }
-
-.swiper-slide img {
-}
-
