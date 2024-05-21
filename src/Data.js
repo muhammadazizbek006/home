@@ -67,3 +67,47 @@ export const swipers = [
         etaji:`2 этаж`,
     },
 ]
+
+
+// loyihalar
+
+
+import loyiha1 from './imgs/loyihalar/loyiha1.jpg'
+import loyiha2 from './imgs/loyihalar/loyiha2.jpg'
+import loyiha3 from './imgs/loyihalar/loyiha3.jpg'
+import loyiha4 from './imgs/loyihalar/loyiha4.jpg'
+import loyiha5 from './imgs/loyihalar/loyiha5.jpg'
+import loyiha6 from './imgs/loyihalar/loyiha6.jpg'
+
+export const loyihalar = [
+    {
+        id:1,
+        title:`Каркасные дома`,
+        img:loyiha1,
+    },
+    {
+        id:2,
+        title:`Каркасные бани`,
+        img:loyiha2,
+    },
+    {
+        id:3,
+        title:`Бани из бруса`,
+        img:loyiha3,
+    },
+    {
+        id:4,
+        title:`Дом из бруса`,
+        img:loyiha4,
+    },
+    {
+        id:5,
+        title:`Готовые дома`,
+        img:loyiha5,
+    },
+    {
+        id:6,
+        title:`Дома “под ключ”`,
+        img:loyiha6,
+    },
+] 

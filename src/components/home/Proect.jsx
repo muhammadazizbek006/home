@@ -43,20 +43,23 @@
 //                       {
 //                         swipers.map((e)=>{
 //                           return(
-//                             <SwiperSlide className='flex justify-between' key={e.id} >
+//                             <>
+//                              <SwiperSlide className='flex justify-between' key={e.id} >
                               
 //                               {/* left */}
 //                               <img className='w-[835px] h-[607px] ' src={e.img} />
-//                               {/* right */}
-//                               <div>
-//                                 <h3 className='text-6xl mb-8'>{e.joylashuv}</h3>
-//                                 <div>
-//                                   <span>{e.maydoni}</span>
-//                                   <span>{e.etaji}</span>
-                                
-//                                 </div>
-//                               </div>
 //                             </SwiperSlide>
+//                                 {/* right */}
+//                                 <div>
+//                                    <h3 className='text-6xl mb-8'>{e.joylashuv}</h3>
+//                                   <div>
+//                                    <span>{e.maydoni}</span>
+//                                     <span>{e.etaji}</span>                                            
+//                                  </div>
+//                                 </div>
+                                       
+//                             </>
+                                      
 //                           )
 //                         })
 //                       }
