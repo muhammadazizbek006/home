@@ -12,11 +12,11 @@ const Loyihalar = () => {
                 <h2 className='text-6xl mb-16'>Выбирайте более <br /> чем из 100 проектов</h2>
 
                 {/* loyihalar */}
-                <ul className='grid grid-cols-3 gap-10  i'>
+                <ul className='grid grid-cols-3 gap-10   h-[1150px]   '>
                     {
                         loyihalar.map((e)=>{
                             return(
-                                <li className={` w-[530px] h-[650px] rounded-2xl  `}
+                                <li className={` rounded-2xl  `}
                                  style={{ backgroundImage: `url(${e.img})` }}>
                                     <Link to='/Proects'  className='flex flex-col justify-end h-full p-4  '>
                                         <h3 className='text-5xl text-white mb-9'>{e.title}</h3>
