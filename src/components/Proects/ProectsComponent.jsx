@@ -1,51 +1,67 @@
 import React, { useState } from "react";
 import { Proects } from "../../Data";
+import { Link } from "react-router-dom";
+import next from '../../imgs/loyihalar/next.svg'
+
 
 // Unikal etajlarni olish uchun
-const uniqueEtaji = [...new Set(Proects.map(project => project.etaji))];
+
+const uniqueEtaji = [...new Set(Proects.map((project) => project.etaji))];
 
 const ProectsComponent = () => {
   // Boshlang'ich aktiv tabni birinchi etaj qilib belgilaymiz
   const [activeTab, setActiveTab] = useState(uniqueEtaji[0]);
 
   // Faol tabga qarab ma'lumotlarni filtrlash
-  const filteredProjects = Proects.filter(project => project.etaji === activeTab);
+  const filteredProjects = Proects.filter(
+    (project) => project.etaji === activeTab
+  );
 
   return (
     <>
-      <section>
-        <div className="containerb">
-          <h2 className='text-6xl mb-16'>Проекты и цены</h2>
+      <section className="mb-14">
+        <div className="containerb ">
+          <h2 className="text-6xl mb-16">Проекты и цены</h2>
           <div>
-            <h1 className="text-2xl font-medium mb-10">Tab</h1>
-            <ul className="flex justify-center">
+
+            <ul className="flex  space-x-7">
               {uniqueEtaji.map((etaji) => (
                 <li
                   key={etaji}
                   onClick={() => setActiveTab(etaji)}
-                  className={`px-8 py-3 cursor-pointer mb-20 ${activeTab === etaji ? "bg-white rounded-full shadow-lg" : "bg-tab"}`}
+                  className={`px-8 py-3 cursor-pointer mb-20 border-2 border-gren rounded-md   ${
+                    activeTab === etaji
+                      ? "bg-gren  text-white shadow-lg"
+                      : " text-gren "
+                  }`}
                 >
                   {etaji} этаж
                 </li>
               ))}
             </ul>
 
-            <div className='grid grid-cols-4 gap-y-8 gap-x-5'>
+            <div className="grid grid-cols-3 gap-y-8 gap-x-5">
               {filteredProjects.map((project) => (
                 <div
                   key={project.id}
-                  className='cursor-pointer flex flex-col bg-white rounded-2xl shadow-xl'
+                  className="cursor-pointer h-[665px] flex flex-col bg-no-repeat pb-9  rounded-2xl "
+                  style={{ backgroundImage: `url(${project.img}) ` }}
                 >
-                  <img className='h-64 mb-5 object-cover pt-3' src={project.img} alt={project.title} />
-                  {/* Agar kerak bo'lsa, quyidagi qismi izohdan chiqarishingiz mumkin */}
-                  {/* <div className='px-5 h-full'>
-                    <p className='text-brend text-lg mb-3'>{project.label}</p>
-                    <h3 className='text-2xl font-semibold mb-10'>{project.title}</h3>
-                    <div className='flex pb-5 items-center justify-between'>
-                      <b className='text-xl font-semibold'><sup>$</sup>{project.narxi}</b>
-                      <img src={shopadd} alt="shopadd" />
-                    </div>
-                  </div> */}
+                  <Link
+                    to={`/Proect/${project.title}`}
+                    className="flex flex-col justify-end h-full p-4  "
+                  >
+                    <h3 className="text-5xl text-white mb-9">{project.title}</h3>
+                    <Link
+                      to="/Proects"
+                      className="bg-gren py-3 px-7 rounded w-72 hover:opacity-90 duration-300 flex items-center "
+                    >
+                      <span className="text-xl text-white mr-3">
+                        Смотреть проекты
+                      </span>
+                      <img src={next} alt={project.title} />
+                    </Link>
+                  </Link>
                 </div>
               ))}
             </div>
@@ -53,7 +69,7 @@ const ProectsComponent = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
 export default ProectsComponent;
