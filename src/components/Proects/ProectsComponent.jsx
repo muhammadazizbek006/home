@@ -53,7 +53,7 @@ const ProectsComponent = () => {
                   >
                     <h3 className="text-5xl text-white mb-9">{project.title}</h3>
                     <Link
-                      to="/Proects"
+                     to={`/Proect/${project.title}`}
                       className="bg-gren py-3 px-7 rounded w-72 hover:opacity-90 duration-300 flex items-center "
                     >
                       <span className="text-xl text-white mr-3">
