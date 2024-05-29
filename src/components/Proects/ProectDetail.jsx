@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { Proects } from '../../Data';
+import Aloqa from '../home/Aloqa'
 // img
 import razmer from '../../imgs/loyihalar/razmer.svg'
 import maydon from '../../imgs/loyihalar/maydon.svg'
@@ -105,8 +106,11 @@ const ProectDetail = () => {
                     )
                 })
             }
+
+            
             </div>
         </section>
+        <Aloqa/>
     </>
   )
 }
