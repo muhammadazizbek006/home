@@ -27,13 +27,13 @@ const Sharx = () => {
         }}
        
         modules={[Autoplay, Pagination]}
-        className="mySwiper "
+        className="mySwiper sharx "
       >
         {
             sharxlar.map((e)=>{
                 return(
 
-                    <SwiperSlide className='px-28 py-12' key={e.id}>
+                    <SwiperSlide className='px-28 py-12 ' key={e.id}>
                         <div className='flex items-center mb-16'>
                             <h3 className='text-[40px] mr-4 '>{e.name}</h3>
                             <p>{e.like}</p>

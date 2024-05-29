@@ -6,6 +6,7 @@ import Aloqa from '../home/Aloqa'
 import razmer from '../../imgs/loyihalar/razmer.svg'
 import maydon from '../../imgs/loyihalar/maydon.svg'
 import etaj from '../../imgs/loyihalar/etaj.svg'
+import Galareya from '../../components/Galareya';
 
 const ProectDetail = () => {
     const {title} = useParams();
@@ -110,7 +111,9 @@ const ProectDetail = () => {
             
             </div>
         </section>
+        <Galareya/>
         <Aloqa/>
+
     </>
   )
 }

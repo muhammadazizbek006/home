@@ -4,6 +4,7 @@ import MainLayout from './layouts/MainLayout'
 import Home from './pages/Home'
 import Proects from './pages/Proects'
 import ProectDetail from './components/Proects/ProectDetail'
+import Galareya from './pages/Galareya'
 const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -11,6 +12,7 @@ const App = () => {
         <Route index element={<Home/>}/>
         <Route path='/proects' element={<Proects/>}/>
         <Route path='/Proect/:title' element={<ProectDetail/>}/>
+        <Route path='/galareya' element={<Galareya/>}/>
       </Route>
     )
   )

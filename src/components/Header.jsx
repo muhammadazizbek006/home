@@ -21,7 +21,7 @@ const Header = () => {
             </li>
             
             <li>
-              <Link>Наши работы</Link>
+              <Link to='/galareya'>Наши работы</Link>
             </li>
             
             <li>
