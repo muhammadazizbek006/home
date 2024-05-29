@@ -25,7 +25,7 @@ const Header = () => {
             </li>
             
             <li>
-              <Link>Заказчику</Link>
+              <Link to='/MijozlarUchunMalumot'>Информация</Link>
             </li>
             
             <li>

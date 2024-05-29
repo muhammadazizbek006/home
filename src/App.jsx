@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Proects from './pages/Proects'
 import ProectDetail from './components/Proects/ProectDetail'
 import Galareya from './pages/Galareya'
+import MijozlarUchunMalumot from './pages/MijozlarUchunMalumot'
 const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -13,6 +14,7 @@ const App = () => {
         <Route path='/proects' element={<Proects/>}/>
         <Route path='/Proect/:title' element={<ProectDetail/>}/>
         <Route path='/galareya' element={<Galareya/>}/>
+        <Route path='/MijozlarUchunMalumot' element={<MijozlarUchunMalumot/>}/>
       </Route>
     )
   )

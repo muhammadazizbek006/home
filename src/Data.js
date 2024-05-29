@@ -432,3 +432,40 @@ export const Kakrasniy = [
         sharx:`В целом, каркасные дома являются современным и перспективным вариантом жилья, отличающимся высокой эффективностью, надежностью и привлекательным внешним видом. Их использование сокращает время строительства, позволяет создавать интересные архитектурные решения, а также обеспечивает высокую тепло- и звукоизоляцию, что делает данное жилье привлекательным в современном мире.`
     },
 ]
+
+
+// banlar 
+
+import bank1 from './imgs/banks/1.jpg'
+import bank2 from './imgs/banks/2.jpg'
+import bank3 from './imgs/banks/3.jpg'
+import bank4 from './imgs/banks/4.jpg'
+import bank5 from './imgs/banks/5.jpg'
+import bank6 from './imgs/banks/6.jpg'
+
+export const banks = [
+    {
+        id:1,
+        img:bank1,
+    },
+    {
+        id:2,
+        img:bank2,
+    },
+    {
+        id:3,
+        img:bank3,
+    },
+    {
+        id:4,
+        img:bank4,
+    },
+    {
+        id:5,
+        img:bank5,
+    },
+    {
+        id:6,
+        img:bank6,
+    },
+]
