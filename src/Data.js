@@ -162,6 +162,12 @@ export const Proects = [
         razmer:`8х10`,
         etaji:1,
         reja:uyrejasi,
+        sxema:`Без отделки
+        Контур`,
+        sxema2:`Без отделки
+        Теплый контур`,
+        sxema3:`С отделкой
+        Комфорт`,
         tugamagansxema:`535-700`,
         tugamagancounter:`768-600`,
         tugatilgan:`1 360 000 `,
@@ -176,6 +182,12 @@ export const Proects = [
         razmer:`8х11`,
         etaji:2,
         reja:uyrejasi,
+                sxema:`Без отделки
+        Контур`,
+        sxema2:`Без отделки
+        Теплый контур`,
+        sxema3:`С отделкой
+        Комфорт`,
         tugamagansxema:`535-700`,
         tugamagancounter:`768-600`,
         tugatilgan:`1 360 000 `,
@@ -190,6 +202,12 @@ export const Proects = [
         razmer:`8х10`,
         etaji:3,
         reja:uyrejasi,
+                sxema:`Без отделки
+        Контур`,
+        sxema2:`Без отделки
+        Теплый контур`,
+        sxema3:`С отделкой
+        Комфорт`,
         tugamagansxema:`535-700`,
         tugamagancounter:`768-600`,
         tugatilgan:`1 360 000 `,
@@ -204,6 +222,12 @@ export const Proects = [
         razmer:`8х10`,
         etaji:1,
         reja:uyrejasi,
+                sxema:`Без отделки
+        Контур`,
+        sxema2:`Без отделки
+        Теплый контур`,
+        sxema3:`С отделкой
+        Комфорт`,
         tugamagansxema:`535-700`,
         tugamagancounter:`768-600`,
         tugatilgan:`1 360 000 `,
@@ -218,6 +242,12 @@ export const Proects = [
         razmer:`8х9`,
         etaji:2,
         reja:uyrejasi,
+                sxema:`Без отделки
+        Контур`,
+        sxema2:`Без отделки
+        Теплый контур`,
+        sxema3:`С отделкой
+        Комфорт`,
                 tugamagansxema:`535-700`,
         tugamagancounter:`768-600`,
         tugatilgan:`1 360 000 `,
@@ -232,6 +262,12 @@ export const Proects = [
         razmer:`8х10`,
         etaji:2,
         reja:uyrejasi,
+                sxema:`Без отделки
+        Контур`,
+        sxema2:`Без отделки
+        Теплый контур`,
+        sxema3:`С отделкой
+        Комфорт`,
                 tugamagansxema:`535-700`,
         tugamagancounter:`768-600`,
         tugatilgan:`1 360 000 `,
@@ -246,6 +282,12 @@ export const Proects = [
         razmer:`8х10`,
         etaji:2,
         reja:uyrejasi,
+                sxema:`Без отделки
+        Контур`,
+        sxema2:`Без отделки
+        Теплый контур`,
+        sxema3:`С отделкой
+        Комфорт`,
                 tugamagansxema:`535-700`,
         tugamagancounter:`768-600`,
         tugatilgan:`1 360 000 `,
@@ -260,6 +302,12 @@ export const Proects = [
         razmer:`8х10`,
         etaji:1,
         reja:uyrejasi,
+                sxema:`Без отделки
+        Контур`,
+        sxema2:`Без отделки
+        Теплый контур`,
+        sxema3:`С отделкой
+        Комфорт`,
                 tugamagansxema:`535-700`,
         tugamagancounter:`768-600`,
         tugatilgan:`1 360 000 `,
@@ -274,6 +322,12 @@ export const Proects = [
         razmer:`8х10`,
         etaji:1,
         reja:uyrejasi,
+                sxema:`Без отделки
+        Контур`,
+        sxema2:`Без отделки
+        Теплый контур`,
+        sxema3:`С отделкой
+        Комфорт`,
                 tugamagansxema:`535-700`,
         tugamagancounter:`768-600`,
         tugatilgan:`1 360 000 `,
@@ -288,6 +342,12 @@ export const Proects = [
         razmer:`8х10`,
         etaji:2,
         reja:uyrejasi,
+                sxema:`Без отделки
+        Контур`,
+        sxema2:`Без отделки
+        Теплый контур`,
+        sxema3:`С отделкой
+        Комфорт`,
         tugamagansxema:`535-700`,
         tugamagancounter:`768-600`,
         tugatilgan:`1 360 000 `,
@@ -302,6 +362,12 @@ export const Proects = [
         razmer:`8х10`,
         etaji:3,
         reja:uyrejasi,
+                sxema:`Без отделки
+        Контур`,
+        sxema2:`Без отделки
+        Теплый контур`,
+        sxema3:`С отделкой
+        Комфорт`,
                 tugamagansxema:`535-700`,
         tugamagancounter:`768-600`,
         tugatilgan:`1 360 000 `,
@@ -316,6 +382,12 @@ export const Proects = [
         razmer:`8х10`,
         etaji:3,
         reja:uyrejasi,
+                sxema:`Без отделки
+        Контур`,
+        sxema2:`Без отделки
+        Теплый контур`,
+        sxema3:`С отделкой
+        Комфорт`,
                 tugamagansxema:`535-700`,
         tugamagancounter:`768-600`,
         tugatilgan:`1 360 000 `,
