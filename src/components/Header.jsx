@@ -29,7 +29,7 @@ const Header = () => {
             </li>
             
             <li>
-              <Link>Контакты</Link>
+              <Link to='/kontakt'>Контакты</Link>
             </li>
           
           </ul>
