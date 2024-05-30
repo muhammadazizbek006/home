@@ -2,7 +2,13 @@ import React from 'react'
 
 const Kontakt = () => {
   return (
-    <div>Kontakt</div>
+    <>
+        <section>
+            <div className="containerb">
+                
+            </div>
+        </section>
+    </>
   )
 }
 
