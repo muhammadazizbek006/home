@@ -1,4 +1,11 @@
 import React from 'react'
+import {
+  Drawer,
+  Button,
+  Typography,
+  IconButton,
+} from "@material-tailwind/react";
+
 import { Link } from 'react-router-dom'
 // img
 
@@ -6,18 +13,22 @@ import logo from '../imgs/logo.svg'
 import tel from '../imgs/tel.svg'
 import hamburger from '../imgs/responsive/menyu.svg'
 const Header = () => {
+  const [openRight, setOpenRight] = React.useState(false);
+
+  const openDrawerRight = () => setOpenRight(true);
+  const closeDrawerRight = () => setOpenRight(false);
   return (
     <>
-      <section className='pt-6 pb-20'>
+      <section className='pt-6 pb-20 relative'>
         <div className="containerb flex justify-between items-center">
           {/* left */}
           <ul className='flex space-x-4 lg:space-x-6  xl:space-x-8 items-center text-base '>
 
-            <li>
+            <li className='hidden sm:block'>
               <Link>Главная</Link>
             </li>
             
-            <li>
+            <li className='hidden sm:block'> 
               <Link>Проекты</Link>
             </li>
             
@@ -52,11 +63,53 @@ const Header = () => {
 
           </div>
 
-            <button className='block md:hidden'>
-                <img src={hamburger} alt="" />
+            <button onClick={openDrawerRight} className='block md:hidden'>
+                <img src={hamburger} alt="menu" />
             </button>
 
         </div>
+
+        <Drawer
+        placement="right"
+        open={openRight}
+        onClose={closeDrawerRight}
+        className="fixed top-0 right-0 w-64 h-full z-50 px-6 bg-black text-white"
+        overlayProps={{ className: "bg-black bg-opacity-0" }}
+        transition={{ duration: 0.3 }}
+      >
+        <div className="mb-6 flex items-center justify-between     pr-4 pt-4">
+          <img className='w-10' src={logo} alt="" />
+          <IconButton
+            variant="text"
+            color="blue-gray"
+            onClick={closeDrawerRight}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="currentColor"
+              className="h-5 w-5"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </IconButton>
+        </div>
+
+        <div className=' flex flex-col items-center text-center space-y-2'>
+          <Link>Главная</Link>
+          <Link>Проекты</Link>
+          <Link>Наши работы</Link>
+          <Link>Контакты</Link>
+
+        </div>
+        
+      </Drawer>
       </section>
     </>
   )
