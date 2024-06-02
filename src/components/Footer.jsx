@@ -21,7 +21,7 @@ const Footer = () => {
             </li>
             {/* links */}
             <li className='flex items-center space-x-8 text-base'>
-              <Link className='hidden sm:block'>Главная</Link>
+              <Link className='hidden sm:block '>Главная</Link>
               <Link className='hidden sm:block'>Проекты</Link>
               <Link className='hidden md:block'>Отзывы</Link>
               <Link className='hidden lg:block'>Контакты</Link>
