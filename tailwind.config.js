@@ -13,6 +13,9 @@ export default {
       backgroundImage: {
         'hero': "url('/src/imgs/hero.png')",
 
+      },
+      screens:{
+        '1300':'1300px'
       }
     },
   },
