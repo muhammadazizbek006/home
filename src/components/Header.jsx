@@ -17,6 +17,10 @@ const Header = () => {
 
   const openDrawerRight = () => setOpenRight(true);
   const closeDrawerRight = () => setOpenRight(false);
+
+  const Closedraw =()=>{
+    setOpenRight(false)
+  }
   return (
     <>
       <section className='pt-6 pb-20 relative'>
@@ -84,7 +88,7 @@ const Header = () => {
           <IconButton
             variant="text"
             color="blue-gray"
-            onClick={closeDrawerRight}
+            onClick={Closedraw}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
