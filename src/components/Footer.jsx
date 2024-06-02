@@ -12,7 +12,7 @@ const Footer = () => {
     <>
       <section className='py-14'>
         <div className="containerb">
-          <ul className='flex justify-between items-center'>
+          <ul className='flex justify-between'>
             {/* logo */}
             <li>
               <Link to='/'>
@@ -21,10 +21,10 @@ const Footer = () => {
             </li>
             {/* links */}
             <li className='flex items-center space-x-8 text-base'>
-              <Link>Главная</Link>
-              <Link>Проекты</Link>
-              <Link>Отзывы</Link>
-              <Link>Контакты</Link>
+              <Link className='hidden sm:block'>Главная</Link>
+              <Link className='hidden sm:block'>Проекты</Link>
+              <Link className='hidden md:block'>Отзывы</Link>
+              <Link className='hidden lg:block'>Контакты</Link>
 
             </li>
 
@@ -33,15 +33,17 @@ const Footer = () => {
               <a className='mb-5' href="tel:+7 (999) 000-00-00">+7 (999) 000-00-00</a>
               <div>
 
-              <a className='bg-gren p-4 inline-block text-end rounded-full mr-5' href="https://wa.me/+998914750612">
+              <a className='bg-gren p-4 inline-block rounded-full mr-5' href="https://t.me/Umarov_Dev">
+                <img className='w-3  md:w-7' src={telegram} alt="telegram" />
+              </a>
+
+              <a className='bg-gren p-4  hidden md:inline-block text-end rounded-full mr-5' href="https://wa.me/+998914750612">
                 <img src={whatsapp} alt="whatsapp" />
               </a>
 
-              <a className='bg-gren p-4 inline-block rounded-full mr-5' href="https://t.me/Umarov_Dev">
-                <img src={telegram} alt="telegram" />
-              </a>
+             
               <a className='bg-gren p-4 inline-block rounded-full' href="">
-                <img src={instagram} alt="instagram" />
+                <img className='w-3 md:w-7'  src={instagram} alt="instagram" />
               </a>
               </div>
             </li>
