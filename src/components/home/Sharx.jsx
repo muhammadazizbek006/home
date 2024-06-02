@@ -28,7 +28,7 @@ const Sharx = () => {
         }}
        
         modules={[Autoplay, Pagination]}
-        className="mySwiper md:sharx "
+        className="mySwiper sharx "
       >
         {
             sharxlar.map((e)=>{

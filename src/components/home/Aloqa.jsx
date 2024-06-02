@@ -55,8 +55,8 @@ const Aloqa = () => {
     <>
         <section className='bg-black pt-28 pb-12'>
             <div className="containerb">
-                <h2 className='text-white text-6xl text-center mb-8'>Устали подбирать варианты?</h2>
-                <p className='text-white  mb-20 text-2xl text-center'>Оставьте контакты, вам перезвонит наш сотрудник архитектурного бюрои  <br />за 15 минут поможет определится с базовым вариантом</p>
+                <h2 className='text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center mb-8'>Устали подбирать варианты?</h2>
+                <p className='text-white  mb-20 text-lg  lg:text-2xl text-center'>Оставьте контакты, вам перезвонит наш сотрудник архитектурного бюрои  <br />за 15 минут поможет определится с базовым вариантом</p>
                 
                 {/* inputs */}
                 <form
@@ -64,7 +64,7 @@ const Aloqa = () => {
                   className=" flex flex-col justify-center items-center p-4 "
                 >
                   
-                  <div className=" grid grid-cols-3 gap-x-4">
+                  <div className=" grid md:grid-cols-2 lg:grid-cols-3 gap-x-4">
                     <input
                       onChange={handleName}
                       value={name}
