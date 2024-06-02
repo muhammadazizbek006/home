@@ -78,7 +78,9 @@ const Header = () => {
         transition={{ duration: 0.3 }}
       >
         <div className="mb-6 flex items-center justify-between     pr-4 pt-4">
-          <img className='w-10' src={logo} alt="" />
+          <Link to='/'>
+            <img onClick={closeDrawerRight} className='w-10' src={logo} alt="" />
+          </Link>
           <IconButton
             variant="text"
             color="blue-gray"
@@ -102,10 +104,10 @@ const Header = () => {
         </div>
 
         <div className=' flex flex-col items-center text-center space-y-2'>
-          <Link>Главная</Link>
-          <Link>Проекты</Link>
-          <Link>Наши работы</Link>
-          <Link>Контакты</Link>
+          <Link onClick={closeDrawerRight}>Главная</Link>
+          <Link onClick={closeDrawerRight}>Проекты</Link>
+          <Link onClick={closeDrawerRight}>Наши работы</Link>
+          <Link onClick={closeDrawerRight}>Контакты</Link>
 
         </div>
         
