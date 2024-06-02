@@ -17,6 +17,7 @@ const Sharx = () => {
     <>
         <section className='pb-20'>
             <div className="containerb">
+              <h2 className='text-center md:text-4xl lg:text-6xl mb-20'>Что о нас говорят</h2>
             <>
       <Swiper
         spaceBetween={30}
@@ -27,18 +28,18 @@ const Sharx = () => {
         }}
        
         modules={[Autoplay, Pagination]}
-        className="mySwiper sharx "
+        className="mySwiper md:sharx "
       >
         {
             sharxlar.map((e)=>{
                 return(
 
                     <SwiperSlide className='px-28 py-12 ' key={e.id}>
-                        <div className='flex items-center mb-16'>
-                            <h3 className='text-[40px] mr-4 '>{e.name}</h3>
-                            <p>{e.like}</p>
+                        <div className='flex items-center mb-7 lg:mb-16'>
+                            <h3 className=' text-3xl xl:text-[40px] mr-4 '>{e.name}</h3>
+                            <p className='hidden md:block'>{e.like}</p>
                         </div>
-                        <p className='text-2xl font-medium'>{e.sharx}</p>
+                        <p className=' text-base lg:text-lg xl:text-2xl lg:font-medium'>{e.sharx}</p>
                     </SwiperSlide>
                 )
             })

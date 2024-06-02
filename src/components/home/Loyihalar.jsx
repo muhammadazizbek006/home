@@ -8,7 +8,7 @@ const Loyihalar = () => {
   return (
     <>
         <section className='py-20'>
-            <div className="containerb flex flex-col items-center">
+            <div className="containerb flex flex-col items-center ">
                 <h2 className='text-4xl xl:text-6xl mb-16'>Выбирайте более <br /> чем из 100 проектов</h2>
 
                 {/* loyihalar */}
