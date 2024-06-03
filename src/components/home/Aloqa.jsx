@@ -77,7 +77,7 @@ const Aloqa = () => {
                       onChange={handlePhone}
                       value={phone}
                       required
-                      type="tel"
+                      type="text"
                       placeholder="Телефон"
                       className="bg-[#F8F8F8]  py-4 pr-36 pl-2 rounded-sm shadow-md mb-5"
                     />

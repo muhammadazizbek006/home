@@ -39,32 +39,33 @@ const ProectsComponent = () => {
                 </li>
               ))}
             </ul>
-
-            <div className="grid grid-cols-3 gap-y-8 gap-x-5">
-              {filteredProjects.map((project) => (
-                <div
-                  key={project.id}
-                  className="cursor-pointer h-[665px] flex flex-col bg-no-repeat pb-9  rounded-2xl "
-                  style={{ backgroundImage: `url(${project.img}) ` }}
-                >
-                  <Link
-                    to={`/Proect/${project.title}`}
-                    className="flex flex-col justify-end h-full p-4  "
-                  >
-                    <h3 className="text-5xl text-white mb-9">{project.title}</h3>
-                    <Link
-                     to={`/Proect/${project.title}`}
-                      className="bg-gren py-3 px-7 rounded w-72 hover:opacity-90 duration-300 flex items-center "
+              <div className="flex flex-col items-center">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-5">
+                  {filteredProjects.map((project) => (
+                    <div
+                      key={project.id}
+                      className="cursor-pointer  xl:h-[605px] h-96  w-80 xl:w-[410px] flex flex-col items-center bg-no-repeat pb-9  rounded-2xl "
+                      style={{ backgroundImage: `url(${project.img}) ` }}
                     >
-                      <span className="text-xl text-white mr-3">
-                        Смотреть проекты
-                      </span>
-                      <img src={next} alt={project.title} />
-                    </Link>
-                  </Link>
+                      <Link
+                        to={`/Proect/${project.title}`}
+                        className="flex flex-col justify-end h-full p-4  "
+                      >
+                        <h3 className="text-5xl text-white mb-9">{project.title}</h3>
+                        <Link
+                        to={`/Proect/${project.title}`}
+                          className="bg-gren py-3 px-7 rounded w-72 hover:opacity-90 duration-300 flex items-center "
+                        >
+                          <span className="text-xl text-white mr-3">
+                            Смотреть проекты
+                          </span>
+                          <img src={next} alt={project.title} />
+                        </Link>
+                      </Link>
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
+              </div>
           </div>
         </div>
       </section>
