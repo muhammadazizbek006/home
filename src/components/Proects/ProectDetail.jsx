@@ -20,27 +20,27 @@ const ProectDetail = () => {
                     Detail.map((e)=>{
                         return(
                         <div>
-                            <h3 className='text-6xl mb-10'>Проект:  {e.title}</h3>
+                            <h3 className='text-6xl mb-10 text-center lg:text-start'>Проект:  {e.title}</h3>
                         </div>
 
                         )
                     })
                 }
                 {/* */}
-            <ul className='mb-40'>
+            <ul className='mb-40 flex items-center flex-col'>
                 {
                     Detail.map((e)=>{
                         return(
-                            <li className='flex justify-between '>
+                            <li className='flex flex-col items-center lg:items-start lg:flex-row  justify-between '>
                                 {/* left */}
-                                <div>
-                                    <img className='w-[826px] h-[819px] rounded object-cover ' src={e.img} alt="" />
+                                <div className='mb-8 lg:mb-0'>
+                                    <img className=' lg:w-[500px] xl:w-[696px] lg:h-[700px] xl:h-[798px] rounded object-cover ' src={e.img} alt="" />
                                 </div>
                                 {/* right */}
                                 <div className='flex flex-col justify-between'>
                                     {/* narx and sxema wrapper */}
                                    <div>
-                                <div className='text-xl flex space-x-11 mb-16'>
+                                <div className='text-xl flex justify-end xl:justify-start space-x-4 lg:space-x-5 xl:space-x-11 mb-16'>
                                     {/* razmer */}
                                     <div  className='flex flex-col items-center' >
                                         <div className='bg-gren px-7 py-4 rounded'>
@@ -67,26 +67,26 @@ const ProectDetail = () => {
 
                                 <ul className='flex flex-col space-y-5'>
                                      {/* 1 */}
-                                    <li className='flex items-center justify-between py-5 border-y-2'>
+                                    <li className='flex items-center justify-evenly xl:justify-between py-5 border-y-2'>
                                             <p className='text-xl '>{e.sxema}</p>
-                                            <p className='text-gren text-5xl'>{e.tugamagansxema }  руб .</p>
+                                            <p className='text-gren text-2xl sm:text-3xl lg:text-4xl xl:text-5xl'>{e.tugamagansxema }  руб .</p>
                                     </li>
                                   {/* 2 */}
-                                   <li  className='flex items-center justify-between py-5  border-y-2'>
+                                   <li  className='flex items-center justify-evenly xl:justify-between py-5  border-y-2'>
                                             <p className='text-xl '>{e.sxema}</p>
-                                            <p className='text-gren text-5xl'>{e.tugamagancounter} руб .</p>
+                                            <p className='text-gren text-2xl sm:text-3xl lg:text-4xl xl:text-5xl'>{e.tugamagancounter} руб .</p>
                                     </li>
                                    {/* 3 */}
-                                    <li  className='flex items-center justify-between py-5  border-y-2'>
+                                    <li  className='flex items-center justify-evenly xl:justify-between py-5  border-y-2'>
                                             <p className='text-xl '>{e.sxema}</p>
-                                            <p className='text-gren text-5xl'>{e.tugatilgan}  руб .</p>
+                                            <p className='text-gren text-2xl sm:text-3xl lg:text-4xl xl:text-5xl'>{e.tugatilgan}  руб .</p>
                                     </li>
 
                                 </ul>
 
                                    </div>
                      
-                                    <button className='px-28 py-5  bg-gren text-white text-xl'>Оставить заявку на строительство</button>
+                                    <button className=' sm:px-14 xl:px-28 py-5  bg-gren text-white text-base lg:text-xl'>Оставить заявку на строительство</button>
                                 </div>
                             </li>
                         )
