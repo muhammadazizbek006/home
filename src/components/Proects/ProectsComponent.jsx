@@ -21,15 +21,15 @@ const ProectsComponent = () => {
     <>
       <section className="mb-14">
         <div className="containerb ">
-          <h2 className="text-6xl mb-16">Проекты и цены</h2>
+          <h2 className=" text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-16">Проекты и цены</h2>
           <div>
 
-            <ul className="flex  space-x-7">
+            <ul className="flex flex-wrap space-x-1   sm:space-x-7">
               {uniqueEtaji.map((etaji) => (
                 <li
                   key={etaji}
                   onClick={() => setActiveTab(etaji)}
-                  className={`px-8 py-3 cursor-pointer mb-20 border-2 border-gren rounded-md   ${
+                  className={`px-8 py-3 cursor-pointer mb-2 sm:mb-20 border-2 border-gren rounded-md   ${
                     activeTab === etaji
                       ? "bg-gren  text-white shadow-lg"
                       : " text-gren "
@@ -51,7 +51,7 @@ const ProectsComponent = () => {
                         to={`/Proect/${project.title}`}
                         className="flex flex-col justify-end h-full p-4  "
                       >
-                        <h3 className="text-5xl text-white mb-9">{project.title}</h3>
+                        <h3 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white mb-9">{project.title}</h3>
                         <Link
                         to={`/Proect/${project.title}`}
                           className="bg-gren py-3 px-7 rounded w-72 hover:opacity-90 duration-300 flex items-center "
