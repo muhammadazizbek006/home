@@ -69,7 +69,7 @@ const Aloqa = () => {
                       onChange={handleName}
                       value={name}
                       required
-                      className="bg-[#F8F8F8]  py-4 pr-36 pl-2 rounded-sm shadow-md mb-5"
+                      className="bg-[#F8F8F8]  py-4 w-[332px] pl-2 rounded-sm shadow-md mb-5"
                       type="text"
                       placeholder="Ваше имя"
                     />
@@ -79,7 +79,7 @@ const Aloqa = () => {
                       required
                       type="text"
                       placeholder="Телефон"
-                      className="bg-[#F8F8F8]  py-4 pr-36 pl-2 rounded-sm shadow-md mb-5"
+                      className="bg-[#F8F8F8]  py-4 w-[332px] pl-2 rounded-sm shadow-md mb-5"
                     />
                     <input
                       onChange={handleEmail}
@@ -87,7 +87,7 @@ const Aloqa = () => {
                       required
                       type="email"
                       placeholder="email"
-                      className="bg-[#F8F8F8]  py-4 pr-36 pl-2 rounded-sm shadow-md mb-5"
+                      className="bg-[#F8F8F8]  py-4 w-[332px] pl-2 rounded-sm shadow-md mb-5"
                     />
                   </div>
                   <div className="flex justify-center">
