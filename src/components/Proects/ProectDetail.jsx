@@ -27,7 +27,7 @@ const ProectDetail = () => {
                     })
                 }
                 {/* */}
-            <ul className='mb-40 flex items-center flex-col'>
+            <ul className='mb-40 '>
                 {
                     Detail.map((e)=>{
                         return(
@@ -65,7 +65,7 @@ const ProectDetail = () => {
                                 </div>
                                 {/* narxlar */}
 
-                                <ul className='flex flex-col space-y-5'>
+                                <ul className='flex flex-col space-y-5 mb-8 lg:mb-40'>
                                      {/* 1 */}
                                     <li className='flex items-center justify-evenly xl:justify-between py-5 border-y-2'>
                                             <p className='text-xl '>{e.sxema}</p>
@@ -86,7 +86,7 @@ const ProectDetail = () => {
 
                                    </div>
                      
-                                    <button className=' sm:px-14 xl:px-28 py-5  bg-gren text-white text-base lg:text-xl'>Оставить заявку на строительство</button>
+                                    <button className=' sm:px-14 xl:px-28 py-5   bg-gren text-white text-base lg:text-xl'>Оставить заявку на строительство</button>
                                 </div>
                             </li>
                         )
