@@ -6,7 +6,7 @@ const KompaniyaXaqida = () => {
     <>
         <section className='py-20 bg-black'>
             <div className="containerb w-[1651px] pt-20 pb-16 pl-20    rounded-2xl text-white">
-                  <h2 className='text-6xl mb-14  '>О компании</h2>
+                  <h2 className=' text-2xl font-medium md:text-4xl lg:text-6xl mb-14  '>О компании</h2>
                   {/* tepa */}
                   <div className=' flex-col flex  md:flex-row  justify-between mb-20'>
                     {/* left */}

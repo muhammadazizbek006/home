@@ -70,7 +70,7 @@ const MijozlarUchunMalumot = () => {
     <>
       <section>
         <div className="">
-          <h2 className="text-6xl font-medium mb-20 containerb">
+          <h2 className=" text-3xl md:text-4xl lg:text-6xl font-medium mb-20 containerb">
             Информация <br /> для заказчиков
           </h2>
           <KompaniyaXaida />
@@ -84,24 +84,24 @@ const MijozlarUchunMalumot = () => {
             </p>
           </div>
           {/* bank */}
-          <ul className="grid grid-cols-3  gap-x-6 gap-y-10 containerb">
-            {banks.map((e) => {
-              return (
-                <li
-                  className=" flex flex-col shadows       justify-between"
-                  key={e.id}
-                >
-                  <img className="object-cover h-56" src={e.img} alt="bank" />
-                  <button className="px-44 py-4 bg-gren rounded-md text-xl text-white">
-                    Условия банка
-                  </button>
-                </li>
-              );
-            })}
-          </ul>
+            <ul className="grid lg:grid-cols-2 xl:grid-cols-3  gap-x-6 gap-y-10 containerb">
+              {banks.map((e) => {
+                return (
+                  <li
+                    className=" flex flex-col shadows       justify-between"
+                    key={e.id}
+                  >
+                    <img className="object-cover h-20 lg:h-36 xl:h-56" src={e.img} alt="bank" />
+                    <button className=" px-32 xl:px-44 py-3 xl:py-4 bg-gren rounded-md text-xl text-white">
+                      Условия банка
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
           {/* inputs forma */}
           <div className="py-24">
-            <h2 className="text-6xl  text-center mb-16">
+            <h2 className=" text-3xl md:text-4xl lg:text-6xl  text-center mb-16">
               Отправить проект на расчет
             </h2>
             <form
@@ -111,59 +111,59 @@ const MijozlarUchunMalumot = () => {
             >
               {/* Имя */}
               <div className="flex flex-col ">
-                <label className="text-5xl mb-8 font-medium">Ваше имя</label>
+                <label className=" text-3xl md:text-4xl lg:text-5xl mb-8 font-medium">Ваше имя</label>
                 <input
                   onChange={handleName}
                   value={name}
                   required
-                  className="py-7 pl-7 w-[662px] border-4"
+                  className=" py-3 md:py-7 pl-7 w-[380px] md:w-[662px] border-4 rounded-md"
                   type="text"
                   placeholder="Имя"
                 />
               </div>
               {/* Номер телефона */}
               <div className="flex flex-col ">
-                <label className="text-5xl mb-8 font-medium">
+                <label className="text-3xl md:text-4xl lg:text-5xl mb-8 font-medium">
                   Номер телефона
                 </label>
                 <input
                   onChange={handlePhone}
                   value={phone}
                   required
-                  className="py-7 pl-7 w-[662px] border-4"
+                  className="py-3 md:py-7 pl-7 w-[400px] md:w-[662px] border-4 rounded-md"
                   type="number"
                   placeholder="+7 (999) 999 99 99"
                 />
               </div>
               {/* Электронная почта */}
               <div className="flex flex-col ">
-                <label className="text-5xl mb-8 font-medium">
+                <label className="text-3xl md:text-4xl lg:text-5xl mb-8 font-medium">
                   Электронная почта
                 </label>
                 <input
                   onChange={handleEmail}
                   value={email}
                   required
-                  className="py-7 pl-7 w-[662px] border-4"
+                  className="py-3 md:py-7 pl-7 w-[400px] md:w-[662px] border-4 rounded-md"
                   type="email"
                   placeholder="example@gmail.com"
                 />
               </div>
               {/* Дополнительно */}
               <div className="flex flex-col ">
-                <label className="text-5xl mb-8 font-medium">
+                <label className="text-3xl md:text-4xl lg:text-5xl mb-8 font-medium">
                   Дополнительно
                 </label>
                 <textarea
                   onChange={handleMessage}
                   value={message}
-                  className="w-[664px] h-[314px] border-4 resize-none "
+                  className=" w-[400px] md:w-[664px] h-[314px] border-4 resize-none "
                   name=""
                   id=""
                 ></textarea>
               </div>
               {/*   Я даю согласие на обработку моих персональных данных */}
-              <div className="flex  items-center">
+              <div className="flex   items-center">
                 <input
                   onChange={handleRozilik}
                   checked={rozilik}
