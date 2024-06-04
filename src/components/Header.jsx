@@ -29,11 +29,11 @@ const Header = () => {
           <ul className='flex space-x-4 lg:space-x-6  xl:space-x-8 items-center text-base '>
 
             <li className='hidden sm:block'>
-              <Link>Главная</Link>
+              <Link to='/'>Главная</Link>
             </li>
             
             <li className='hidden sm:block'> 
-              <Link>Проекты</Link>
+              <Link to='/proects'>Проекты</Link>
             </li>
             
             <li className='hidden sm:block'>
@@ -108,10 +108,10 @@ const Header = () => {
         </div>
 
         <div className=' flex flex-col items-center text-center space-y-2'>
-          <Link onClick={closeDrawerRight}>Главная</Link>
-          <Link onClick={closeDrawerRight}>Проекты</Link>
-          <Link onClick={closeDrawerRight}>Наши работы</Link>
-          <Link onClick={closeDrawerRight}>Контакты</Link>
+          <Link to='/' onClick={closeDrawerRight}>Главная</Link>
+          <Link to='/proects' onClick={closeDrawerRight}>Проекты</Link>
+          <Link to='/galareya' onClick={closeDrawerRight}>Наши работы</Link>
+          <Link to='/kontakt' onClick={closeDrawerRight}>Контакты</Link>
 
         </div>
         

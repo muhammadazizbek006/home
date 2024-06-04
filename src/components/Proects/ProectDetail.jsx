@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { Proects } from '../../Data';
 import Aloqa from '../home/Aloqa'
@@ -12,10 +12,15 @@ const ProectDetail = () => {
     const {title} = useParams();
 
     const Detail = Proects.filter((e) => e.title == title);
+    const  [modal, setModal] = useState(false)
+
+    const togleModal = ()=>{
+        setModal(!modal)
+    }
   return (
     <>
         <section className='py-16'>
-            <div className="containerb">
+            <div className="containerb relative">
                 {
                     Detail.map((e)=>{
                         return(
@@ -86,7 +91,7 @@ const ProectDetail = () => {
 
                                    </div>
                      
-                                    <button className=' sm:px-14 xl:px-28 py-5   bg-gren text-white text-base lg:text-xl'>Оставить заявку на строительство</button>
+                                    <button onClick={togleModal} className=' sm:px-14 xl:px-28 py-5   bg-gren text-white text-base lg:text-xl'>Оставить заявку на строительство</button>
                                 </div>
                             </li>
                         )
@@ -108,7 +113,18 @@ const ProectDetail = () => {
                 })
             }
 
-            
+                {/* modal */}
+                {
+                    modal &&
+                    <div className=' top-64 right-96 text-white z-50 shadow-lg w-[900px] h-0   absolute'>
+                        <form className='  ' action="">
+                            <input className='py-4 pl-3' type="text" placeholder='Ваше имя'/>
+                            <input className='py-4 pl-3' type="text" placeholder='Телефон' />
+                            <button className=''>отправлять</button>
+                        </form>
+                    </div>
+
+                }
             </div>
         </section>
         <Galareya/>
