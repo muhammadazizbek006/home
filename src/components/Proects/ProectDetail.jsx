@@ -151,8 +151,8 @@ const ProectDetail = () => {
                         <>
                             <div className='fixed inset-0 bg-black opacity-50 z-40' onClick={closeModal}></div>
                             <div className='fixed inset-0 flex items-center justify-center z-50'>
-                                <div className='bg-white p-8 rounded shadow-lg relative'>
-                                    <button onClick={closeModal} className=' text-4xl absolute top-0 right-2 text-gray-500 hover:text-gray-800'>
+                                <div className='bg-white p-4 sm:p-8 rounded shadow-lg relative'>
+                                    <button onClick={closeModal} className=' text-3xl absolute top-0  right-2 text-gray-500 hover:text-gray-800'>
                                         &times;
                                     </button>
                                     <form
@@ -165,7 +165,7 @@ const ProectDetail = () => {
                       onChange={handleName}
                       value={name}
                       required
-                      className="bg-[#F8F8F8]  py-4 w-[332px] pl-2 rounded-sm shadow-md mb-5"
+                      className="bg-[#F8F8F8]  py-4 w-[232px] sm:w-[332px] pl-2 rounded-sm shadow-md mb-5"
                       type="text"
                       placeholder="Ваше имя"
                     />
@@ -175,7 +175,7 @@ const ProectDetail = () => {
                       required
                       type="text"
                       placeholder="Телефон"
-                      className="bg-[#F8F8F8]  py-4 w-[332px] pl-2 rounded-sm shadow-md mb-5"
+                      className="bg-[#F8F8F8]  py-4 w-[232px] sm:w-[332px] pl-2 rounded-sm shadow-md mb-5"
                     />
                     <input
                       onChange={handleEmail}
@@ -183,7 +183,7 @@ const ProectDetail = () => {
                       required
                       type="email"
                       placeholder="email"
-                      className="bg-[#F8F8F8]  py-4 w-[332px] pl-2 rounded-sm shadow-md mb-5"
+                      className="bg-[#F8F8F8]  py-4 w-[232px] sm:w-[332px] pl-2 rounded-sm shadow-md mb-5"
                     />
                   </div>
                   <div className="flex justify-center">
