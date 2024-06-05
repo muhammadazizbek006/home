@@ -31,7 +31,7 @@ const Aloqa = () => {
       alert("Iltimos malumotni to'ldiring");
     } else {
       //   setSubject(false);
-      const telegram_bot_id = "6470059960:AAHkas-9gyueIPQvi9F22bU4ZKBO3Te-tc0";
+      const telegram_bot_id = "6772594494:AAG3eakuOi1V_I9A6zUNL0w5tVdGhNFqWcY";
       const chat_id = "6932003276";
 
       const telegramMessage = `Name: ${name}\nEmail: ${email}\nPhone Number : ${phone}\n`;
