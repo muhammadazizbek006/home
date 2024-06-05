@@ -4,17 +4,16 @@ import KlinikaXaqida from '../components/home/KompaniyaXaqida'
 import Loyihalar from '../components/home/Loyihalar'
 import Sharx from '../components/home/Sharx'
 import Aloqa from '../components/home/Aloqa'
-// import Proect from '../components/home/Proect'
 const Home = () => {
   return (
-    <>
+    <div className='flex flex-col justify-between gap-10'>
       <Hero/>
       <KlinikaXaqida/>
-      {/* <Proect/> */}
+
       <Loyihalar/>
       <Sharx/>
       <Aloqa/>
-    </>
+    </div>
   )
 }
 

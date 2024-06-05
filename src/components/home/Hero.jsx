@@ -20,19 +20,19 @@ const Hero = () => {
                 </div>
 
                 {/* hero */}
-                <div className='bg-hero  h-[367px]  lg:h-screen bg-no-repeat relative'>
+                <div className='bg-hero bg-full h-[300px] sm:h-[500px] md:h-[767px]  bg-no-repeat relative'>
                     {/* ilovalar */}
                     <div className='flex  flex-col items-center absolute bottom-12 right-5  '>
                         {/* whatsapp */}
-                        <a className='bg-gren rounded-full p-2 hidden md:inline-block mb-3' href="">
+                        <a className='bg-gren rounded-full p-2 hidden md:inline-block mb-3' href="https://wa.me/+998914750612">
                             <img src={whatsapp} alt="whatsapp" />
                         </a>
                         {/* telegram */}
-                        <a className='bg-telegram rounded-full p-3 hidden md:inline-block mb-4' href="">
+                        <a className='bg-telegram rounded-full p-3 hidden md:inline-block mb-4'  href="https://t.me/Umarov_Dev">
                             <img src={telegram} alt="telegram" />
                         </a>
                         {/* telefon */}
-                        <a className='bg-gren rounded-full p-4 hidden md:inline-block' href="">
+                        <a className='bg-gren rounded-full p-4 hidden md:inline-block' href="tel:+998888361306">
                             <img src={tel} alt="telefon" />
                         </a>
                     </div>

@@ -23,7 +23,9 @@
 
 
 
-
+.bg-full{
+  background-size: 100% 100%;
+}
 
 
 .swiper-button-prev{
