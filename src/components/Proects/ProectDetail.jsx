@@ -27,6 +27,7 @@ const ProectDetail = () => {
 
 
   const handleSubmitInput = (event) => {
+    setModal(false)
     event.preventDefault();
     // setNameSend("");
     // setEmailSend("");

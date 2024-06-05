@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 
 
 // import required modules
-import { Pagination, Autoplay } from 'swiper/modules';
+import {  Autoplay } from 'swiper/modules';
 import { Proects } from '../Data'
 
 const Galareya = () => {
@@ -21,21 +21,19 @@ const Galareya = () => {
 <Swiper
         slidesPerView={3}
         spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
+
         autoplay={{
             delay: 2500,
             disableOnInteraction: false,
           }}
-        modules={[ Autoplay,Pagination]}
+        modules={[ Autoplay]}
         className="mySwiper"
       >
         {
             Proects.map((e)=>{
                 return(
                     <SwiperSlide key={e.id}>
-                        <img src={e.img} alt="" />
+                        <img src={e.img} alt={e.title} />
                     </SwiperSlide>
                 )
             })
