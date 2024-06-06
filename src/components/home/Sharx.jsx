@@ -10,7 +10,7 @@ import 'swiper/css/navigation';
 
 
 // import required modules
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Autoplay,  } from 'swiper/modules';
 import { sharxlar } from '../../Data';
 const Sharx = () => {
   return (
@@ -27,7 +27,7 @@ const Sharx = () => {
           disableOnInteraction: false,
         }}
        
-        modules={[Autoplay, Pagination]}
+        modules={[Autoplay, ]}
         className="mySwiper sharx "
       >
         {
@@ -39,7 +39,7 @@ const Sharx = () => {
                             <h3 className=' text-3xl xl:text-[40px] mr-4 '>{e.name}</h3>
                             <p className='hidden md:block'>{e.like}</p>
                         </div>
-                        <p className=' text-base lg:text-lg xl:text-2xl lg:font-medium'>{e.sharx}</p>
+                        <p className=' text-sm md:text-base lg:text-xl xl:text-2xl lg:font-medium'>{e.sharx}</p>
                     </SwiperSlide>
                 )
             })

@@ -12,10 +12,10 @@ const Hero = () => {
                 {/* hero top */}
                 <div className='flex justify-between mb-16'>
                     {/* left */}
-                    <h2 className=' text-2xl md:text-4xl lg:text-6xl'>Строим дома, в которых <br /> сбываются мечты</h2>
+                    <h2 className=' text-2xl lg:text-4xl xl:text-6xl'>Строим дома, в которых <br /> сбываются мечты</h2>
                     {/* right */}
-                    <div className=' hidden xl:block max-w-[653px]'>
-                        <p className='text-2xl'>Мы используем традиционные технологии каркасного домостроения, взятые от скандинавских стран в области строительства каркасных домов</p>
+                    <div className=' hidden lg:block max-w-[633px]'>
+                        <p className=' text-xl xl:text-2xl'>Мы используем традиционные технологии каркасного домостроения, взятые от скандинавских стран в области строительства каркасных домов</p>
                     </div>
                 </div>
 
