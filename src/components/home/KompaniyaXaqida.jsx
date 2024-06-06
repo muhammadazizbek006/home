@@ -23,23 +23,27 @@ const KompaniyaXaqida = () => {
                     </div>
                   </div>
                   {/* past */}
-                  <ul className='grid sm:grid-cols-2 gap-y-6 lg:gap-y-0  lg:grid-cols-3 gap-x-6'>
-                    {
-                      haqida.map((e)=>{
-                        return(
-                          <li key={e.id} className='text-white lg:w-[320px] xl:w-[404px] flex flex-col border-2 pl-12 pr-3 pt-16 border-gren hover:bg-gren  duration-500 rounded-2xl'>
-                            <div >
-                              <img className='p-4 bg-gren rounded-lg mb-8' src={e.img} alt={e.ustunlik} />
-                            </div>
-                            <div className=' max-w-80 '>
-                              <h3 className=' md:text-xl xl:text-2xl mb-4 '>{e.ustunlik}</h3>
-                              <p className=' md:text-base xl:text-xl mb-16'>{e.sharx}</p>
-                            </div>
-                          </li>
-                        )
-                      })
-                    }
-                  </ul>
+                  <ul className='grid sm:grid-cols-2 gap-y-6 lg:gap-y-0 lg:grid-cols-3 gap-x-6'>
+                      {haqida.map((e) => (
+                        <li 
+                          key={e.id} 
+                          className='text-white lg:w-[320px] xl:w-[404px] flex flex-col border-2 pl-12 pr-3 pt-16 border-gren hover:bg-gren duration-500 rounded-2xl group' 
+                        >
+                          <div>
+                            <img 
+                              className='p-4 bg-gren rounded-lg mb-8 group-hover:bg-black duration-500' 
+                              src={e.img} 
+                              alt={e.ustunlik} 
+                            />
+                          </div>
+                          <div className='max-w-80'>
+                            <h3 className='md:text-xl xl:text-2xl mb-4'>{e.ustunlik}</h3>
+                            <p className='md:text-base xl:text-xl mb-16'>{e.sharx}</p>
+                          </div>
+                        </li>
+                      ))}
+                 </ul>
+
             </div>
         </section>
     </>
