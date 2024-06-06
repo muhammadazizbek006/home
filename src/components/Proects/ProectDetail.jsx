@@ -122,14 +122,17 @@ const ProectDetail = () => {
                                             </div>
                                         </div>
                                         <ul className='flex flex-col space-y-5 mb-8 lg:mb-40'>
+                                          
                                             <li className='flex items-center justify-evenly xl:justify-between py-5 border-y-2'>
                                                 <p className='text-xl'>{e.sxema}</p>
                                                 <p className='text-gren text-2xl sm:text-3xl lg:text-4xl xl:text-5xl'>{e.tugamagansxema} руб.</p>
                                             </li>
+                                          
                                             <li className='flex items-center justify-evenly xl:justify-between py-5 border-y-2'>
                                                 <p className='text-xl'>{e.sxema}</p>
                                                 <p className='text-gren text-2xl sm:text-3xl lg:text-4xl xl:text-5xl'>{e.tugamagancounter} руб.</p>
                                             </li>
+                                          
                                             <li className='flex items-center justify-evenly xl:justify-between py-5 border-y-2'>
                                                 <p className='text-xl'>{e.sxema}</p>
                                                 <p className='text-gren text-2xl sm:text-3xl lg:text-4xl xl:text-5xl'>{e.tugatilgan} руб.</p>

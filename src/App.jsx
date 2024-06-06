@@ -7,6 +7,7 @@ import ProectDetail from './components/Proects/ProectDetail'
 import Galareya from './pages/Galareya'
 import MijozlarUchunMalumot from './pages/MijozlarUchunMalumot'
 import Kontakt from './pages/Kontakt'
+import PageNotFound from './pages/PageNotFound'
 const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='/galareya' element={<Galareya/>}/>
         <Route path='/MijozlarUchunMalumot' element={<MijozlarUchunMalumot/>}/>
         <Route path='/kontakt' element={<Kontakt/>}/>
+        <Route path='*' element={<PageNotFound/>}/>
       </Route>
     )
   )
