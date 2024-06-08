@@ -34,12 +34,12 @@ const Sharx = () => {
             sharxlar.map((e)=>{
                 return(
 
-                    <SwiperSlide className='px-28 py-12 ' key={e.id}>
-                        <div className='flex items-center mb-7 lg:mb-16'>
+                    <SwiperSlide className=' px-12 sm:px-16 md:px-20 lg:px-28 py-8 md:py-12 ' key={e.id}>
+                        <div className='flex items-center text-center md:text-start mb-7 lg:mb-16'>
                             <h3 className=' text-3xl xl:text-[40px] mr-4 '>{e.name}</h3>
                             <p className='hidden md:block'>{e.like}</p>
                         </div>
-                        <p className=' text-sm md:text-base lg:text-xl xl:text-2xl lg:font-medium'>{e.sharx}</p>
+                        <p className=' text-sm md:text-base lg:text-xl xl:text-2xl text-center md:text-start lg:font-medium'>{e.sharx}</p>
                     </SwiperSlide>
                 )
             })
